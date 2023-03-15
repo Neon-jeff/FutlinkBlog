@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script>
+    tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#E26A00",
+        secondary: "#F4D35E",
+        dimWhite: "rgba(255, 255, 255, 0.7)",
+        dimBlue: "rgba(9, 151, 124, 0.1)",
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
+    },
+
+  },
+      screens: {
+      xs: "480px",
+      ss: "620px",
+      sm: "768px",
+      md: "1060px",
+      lg: "1200px",
+      xl: "1700px",
+    },
+    }
+  </script> -->
+  </head>
+  <body class="border-box flex flex-col gap-10 max-sm:gap-0">
+    <nav
+      class="text-md text-black flex justify-between py-3 border-b-2 align-center max-sm:"
+    >
+      <p class="pl-20 text-orange-400 font-semibold w-1/5 max-sm:w-1/2">
+        Futlink Blog
+      </p>
+
+      <div class="flex gap-10 pr-40 text-sm max-sm:hidden">
+        <input
+          type="text"
+          name=""
+          id=""
+          class="border-b-[1px] border-[lightgrey] placeholder:text-[12px] block w-[250px]"
+          placeholder="Search blog"
+        />
+        <span> Home</span>
+        <span> Store</span>
+        <span> Sign Up</span>
+        <span> Login</span>
+      </div>
+    </nav>
+    <section
+      class="intro h-[80vh] w-[90%] self-center flex gap-10 justify-center max-sm:flex-col max-sm:h-3/5 max-sm:w-full"
+    >
+      <div
+        class="h-full w-[60%] rounded-md flex flex-col justify-center relative max-sm:h-screen max-sm:w-full"
+      >
+        <div
+          class="bg-black h-full text-white p-10 flex flex-col justify-center rounded-lg max-sm:rounded-[0px]"
+        >
+          <p class="text-[orange] text-[60px] font-bold">FUTLINK BLOG</p>
+          <p class="text-orange-500 text-[30px]">All The Info You Need</p>
+          <p class="text-sm font-light">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
+            sequi numquam, praesentium esse cum aspernatur dolore obcaecati
+            recusandae natus neque dolor minima iusto delectus cumque dolorum
+            harum fugit corrupti molestiae.
+          </p>
+        </div>
+      </div>
+      <div
+        class="popular w-[40%] flex flex-col gap-3 align-center max-sm:w-full"
+      >
+        <p class="text-center text-lg font-bold text-orange-600">
+          Trending Now
+        </p>
+        <div class="flex flex-col gap-5 items-center">
+          <div
+            class="gist-card bg-white border-[1px] w-[80%] h-full p-2 rounded-md"
+          >
+            <div class="gist-cont w-[90%] mx-auto flex gap-5 items-center">
+              <img
+                src="./assets/images/laptop-blank-screen-digital-device.jpg"
+                alt=""
+                class="w-1/3 rounded-md"
+              />
+              <div>
+                <p class="font-semibold">The Title is Here</p>
+                <p class="text-[13px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  <span class="text-teal-500">Read More</span>
+                </p>
+                <span class="text-[10px]">3rd-March-23</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="gist-card bg-white border-[1px] w-[80%] h-full p-2 rounded-md"
+          >
+            <div class="gist-cont w-[90%] mx-auto flex gap-5 items-center">
+              <img
+                src="./assets/images/laptop-blank-screen-digital-device.jpg"
+                alt=""
+                class="w-1/3 rounded-md"
+              />
+              <div>
+                <p class="font-semibold">The Title is Here</p>
+                <p class="text-[13px]">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  <span class="text-teal-500">Read More</span>
+                </p>
+                <span class="text-[10px]">3rd-March-23</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="gist-card bg-white border-[1px] w-[80%] h-full p-2 rounded-md"
+          >
+            <div class="gist-cont w-[90%] mx-auto flex gap-5 items-center">
+              <img
+                src="./assets/images/laptop-blank-screen-digital-device.jpg"
+                alt=""
+                class="w-1/3 rounded-md"
+              />
+              <div class=" ">
+                <p class="font-semibold">The Title is Here</p>
+                <p class="text-sm">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero
+                  <span class="text-teal-500">Read More</span>
+                </p>
+                <span class="text-[10px]">3rd-March-23</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide-btns self-center flex gap-10">
+          <!-- <img
+            src="https://img.icons8.com/material-sharp/48/null/circled-left--v1.png"
+            class="h-[32px] w-[32px]"
+          />
+          <img
+            src="https://img.icons8.com/material-sharp/48/null/circled-right-2.png"
+            class="h-[32px] w-[32px]"
+          /> -->
+          <p class="text-teal-500">View All</p>
+        </div>
+      </div>
+    </section>
+    <section class="all-topics w-[90%] mx-auto flex flex-col gap-5">
+      <p
+        class="text-[30px] self-center font-bold max-sm:text-[20px] max-sm:self-start"
+      >
+        All Topics
+      </p>
+      <div
+        class="post-cont grid grid-cols-3 gap-10 max-sm:flex max-sm:flex-col"
+      >
+        <div
+          class="postcard-cont p-3 shadow-sm hover:shadow-md hover:bg-slate-50"
+        >
+          <div class="postcard">
+            <img
+              src="./assets/images/laptop-blank-screen-digital-device.jpg"
+              alt=""
+              class="rounded-md"
+            />
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              quod veniam maxime veritatis eius ab necessitatibus illo pariatur
+              fuga quia. <span>Read More</span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="postcard-cont p-3 shadow-sm hover:shadow-md hover:bg-slate-50"
+        >
+          <div class="postcard">
+            <img
+              src="./assets/images/laptop-blank-screen-digital-device.jpg"
+              alt=""
+              class="rounded-md"
+            />
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              quod veniam maxime veritatis eius ab necessitatibus illo pariatur
+              fuga quia. <span>Read More</span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="postcard-cont p-3 shadow-sm hover:shadow-md hover:bg-slate-50"
+        >
+          <div class="postcard">
+            <img
+              src="./assets/images/laptop-blank-screen-digital-device.jpg"
+              alt=""
+              class="rounded-md"
+            />
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              quod veniam maxime veritatis eius ab necessitatibus illo pariatur
+              fuga quia. <span>Read More</span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="postcard-cont p-3 shadow-sm hover:shadow-md hover:bg-slate-50"
+        >
+          <div class="postcard">
+            <img
+              src="./assets/images/laptop-blank-screen-digital-device.jpg"
+              alt=""
+              class="rounded-md"
+            />
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              quod veniam maxime veritatis eius ab necessitatibus illo pariatur
+              fuga quia. <span>Read More</span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="postcard-cont p-3 shadow-sm hover:shadow-md hover:bg-slate-50"
+        >
+          <div class="postcard">
+            <img
+              src="./assets/images/laptop-blank-screen-digital-device.jpg"
+              alt=""
+              class="rounded-md"
+            />
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              quod veniam maxime veritatis eius ab necessitatibus illo pariatur
+              fuga quia. <span>Read More</span>
+            </p>
+          </div>
+        </div>
+        <div
+          class="postcard-cont p-3 shadow-sm hover:shadow-md hover:bg-slate-50"
+        >
+          <div class="postcard">
+            <img
+              src="./assets/images/laptop-blank-screen-digital-device.jpg"
+              alt=""
+              class="rounded-md"
+            />
+            <p class="text-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+              quod veniam maxime veritatis eius ab necessitatibus illo pariatur
+              fuga quia. <span>Read More</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <p
+      class="self-center text-[30px] font-bold max-sm:text-[20px] max-sm:self-start max-sm:p-5"
+    >
+      Promotions
+    </p>
+    <section class="w-4/5 h-full mx-auto">
+      <div class="flex gap-10 justify-center max-sm:flex-col max-sm:gap-5">
+        <div
+          class="postcard-cont p-3 shadow-sm hover:shadow-md hover:bg-slate-50 w-1/4 max-sm:w-full"
+        >
+          <div class="postcard flex flex-col gap-3 items-center">
+            <img
+              src="./assets/images/laptop-blank-screen-digital-device.jpg"
+              alt=""
+              class="rounded-md w-4/5"
+            />
+            <div class="text-sm text-center">
+              <p>LM293D SHIELD</p>
+              <p class="line-through text-[12px]">N40,000</p>
+              <p class="text-green-400 text-md font-semibold">N32,000</p>
+              <button
+                type="submit"
+                class="p-2 bg-black rounded-[5px] text-orange-400 self-center w-full"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+                <div
+          class="postcard-cont p-3 shadow-sm hover:shadow-md hover:bg-slate-50 w-1/4 max-sm:w-full"
+        >
+          <div class="postcard flex flex-col gap-3 items-center ">
+            <img
+              src="./assets/images/laptop-blank-screen-digital-device.jpg"
+              alt=""
+              class="rounded-md w-4/5"
+            />
+            <div class="text-sm text-center">
+              <p>LM293D SHIELD</p>
+              <p class="line-through text-[12px]">N40,000</p>
+              <p class="text-green-400 text-md font-semibold">N32,000</p>
+              <button
+                type="submit"
+                class="p-2 bg-black rounded-[5px] text-orange-400 self-center w-full"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+                <div
+          class="postcard-cont p-3 shadow-sm hover:shadow-md hover:bg-slate-50 w-1/4 max-sm:w-full"
+        >
+          <div class="postcard flex flex-col gap-3 items-center">
+            <img
+              src="./assets/images/laptop-blank-screen-digital-device.jpg"
+              alt=""
+              class="rounded-md w-4/5"
+            />
+            <div class="text-sm text-center">
+              <p>LM293D SHIELD</p>
+              <p class="line-through text-[12px]">N40,000</p>
+              <p class="text-green-400 text-md font-semibold">N32,000</p>
+              <button
+                type="submit"
+                class="p-2 bg-black rounded-[5px] text-orange-400 self-center w-full"
+              >
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p class="self-center text-[30px] font-bold max-sm:text-[20px] max-sm:py-5">
+      Subscribe to Our NewsLetter
+    </p>
+    <section
+      class="subscribe h-[50vh] flex items-center w-4/5 self-center justify-between max-sm:flex-col max-sm:gap-3 max-sm:items-center max-sm:h-full max-sm:pb-5"
+    >
+      <div class="w-1/2 max-sm:w-full max-sm:text-sm">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi libero
+          suscipit tempora rerum dolores commodi dolore unde incidunt velit
+          iusto tempore quae animi porro, similique, blanditiis quod amet
+          reiciendis ipsum iste ea inventore odit? Inventore!
+        </p>
+      </div>
+      <div class="w-1/3 bg-yellow-100 p-5 rounded-md max-sm:w-full">
+        <form action="" class="flex flex-col gap-3">
+          <label for="">Name</label>
+          <input
+            type="email"
+            name=""
+            id=""
+            class="border-[1px] rounded-[3px] border-black pt-3 "
+          />
+          <label for="">Email</label>
+          <input
+            type="email"
+            name=""
+            id=""
+            class="border-[1px] rounded-[3px] border-black pt-3 "
+          />
+          <label for="">Say Something (Optional)</label>
+          <input
+            type="email"
+            name=""
+            id=""
+            class="border-[1px] rounded-[3px] border-black pt-3 "
+          />
+          <button
+            type="submit"
+            class="w-1/2 p-3 bg-black rounded-md text-orange-400 self-center"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-black h-[50vh]"></footer>
+  </body>
+</html>
